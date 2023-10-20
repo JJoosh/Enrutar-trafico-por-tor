@@ -37,9 +37,26 @@ sudo perl nipe.pl install
 
 ### Paso 5 
 
-Una vez ya instalado lo incoamos 
+Una vez ya instalado activaremos y prenderemos el servicio de tor
 
 ```bash
-sudo perl nipe.pl start                                                                       
+sudo systemctl enable tor
+sudo systemctl start tor                                                                       
 ```
-### Y listo
+
+### Paso 6 
+
+```bash
+sudo perl nipe.p1 start                                                                   
+```
+
+### Y listo si todo salio bien ponemos el siguiente comando y nos motrara nuestra ip para navegar por medio de la red tor
+
+```bash
+sudo perl nipe.p1 status                                                                   
+```
+### Si queremos apagarlo ponemos 
+
+```bash
+sudo perl nipe.p1 stop                                                                   
+```
